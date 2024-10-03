@@ -1,0 +1,23 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "My first package json",
+  "type": "module",
+  "main": "1",
+  "scripts": {
+    "test": "1"
+  },
+  "repository": {
+    "type": "module",
+    "url": "git+https://github.com/ShulhaPavel/aqa-advanced.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShulhaPavel/aqa-advanced/issues"
+  },
+  "homepage": "https://github.com/ShulhaPavel/aqa-advanced#readme",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
+}
