@@ -1,4 +1,4 @@
-const PI = Math.PI;
+export const PI = Math.PI;
 let radius = 5;
 
 let squareCircle = PI * Math.pow(radius, 2);
