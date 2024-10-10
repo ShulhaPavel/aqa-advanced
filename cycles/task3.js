@@ -1,4 +1,4 @@
-const number = 5
+const number = 6
 
 console.log("For")
 for (let i=1; i<=10; i++){
