@@ -18,7 +18,6 @@ const handleOdd = (n) => {
 //     }
 }
 
-
 const handleNum = (callback, callback1, n) => {
     const isNumEven = callback(n);
     const isNumOdd = callback1(n);
@@ -26,7 +25,7 @@ const handleNum = (callback, callback1, n) => {
     console.log(`The number ${n} is an odd number: ${isNumOdd}.`);
 }
 
-
 // console.log(handleEven(6))
 // console.log(handleOdd(5))
+
 handleNum(handleEven, handleOdd, 6)
