@@ -1,4 +1,4 @@
-import {numbers} from "./task1.js";
+import {numbers2} from "./arrays.js";
 
-const res = numbers.reduce((a, b) => a + b);
+const res = numbers2.reduce((a, b) => a + b);
 console.log(res);
