@@ -4,16 +4,29 @@ import { Book } from "./book.js";
         super(name, author, year)
         this.fileFormat = fileFormat;
     }
+
+    get fileFormat(){
+        return this._fileFormat;
+    }
+
+    set fileFormat(newFormat){
+        if (typeof newFormat !== "string"){
+            console.log(`The format of the book should have sting format`);
+           }else if(newFormat !== "EPUB" && newFormat !== "FB2" && newFormat !== "TXT" && newFormat !== "KF8" && newFormat !== "PDF"){
+            console.log("Invalid format");
+           }else{
+            this._fileFormat = newFormat;
+           }
+    }
+
+    static createFromBook(book, fileFormat) {
+        return new EBook(book.name, book.author, book.year, fileFormat);
+    }
+
     printInfo(){
         super.printInfo();
         console.log(`Формат файлу: ${this.fileFormat}`)
     }
 }
 
-const ebook1 = new EBook("Дюна", "Фрэнк Герберт", 1965, "EPUB ");
-const ebook2 = new EBook("Ім'я троянди", "Умберто Еко", 1980, "FB2 ");
-const ebook3 = new EBook("Коротка історія майже всього на світі", "Білл Брайсон", 2003, "TXT");
-
-ebook1.printInfo()
-ebook2.printInfo()
-ebook3.printInfo()
+export default EBook;
