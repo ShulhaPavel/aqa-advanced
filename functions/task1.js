@@ -24,3 +24,4 @@ const squareRectangle2 = (width2, height2) => {
 }
 
 console.log(squareRectangle1(15, 15))
+console.log(squareRectangle2(15, 15))

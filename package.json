@@ -5,7 +5,8 @@
   "type": "module",
   "main": "1",
   "scripts": {
-    "test": "1"
+    "test": "npx eslint --fix .",
+    "prepare": "husky"
   },
   "repository": {
     "type": "module",
