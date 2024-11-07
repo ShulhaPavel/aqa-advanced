@@ -9,7 +9,7 @@ const devide = (numerator, denominator) => {
         console.log(res);
       } 
     }catch (error) {
-        console.log("Сталася помилка");
+        console.log(`Сталася помилка: ${error}`);
       } finally {
         console.log("Робота завершена");
       }
