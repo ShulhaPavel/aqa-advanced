@@ -1,8 +1,6 @@
-module.exports = {
+export default {
     reporters: [
         "default",
         "jest-html-reporters"
       ]
 }
-
-//module.exports =
